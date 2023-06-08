@@ -2,7 +2,7 @@ import React from 'react'
 import responsive from '../assets/responsive-design.png'
 import detailed from '../assets/detailed-design.png'
 import flexible from '../assets/flexible-design.png'
-import {Card, CardBody} from '@material-tailwind/react'
+
 
 function WhatIdo() {
     const data = [
