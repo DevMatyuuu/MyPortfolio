@@ -12,7 +12,10 @@ import {AiFillGithub, AiFillLinkedin, AiFillFacebook,} from 'react-icons/ai'
 function Hero() {
 
   const handleFbLink = () => {
-    window.open('https://www.facebook.com/Matthew.santos1202/', '_blank');
+    window.open('https://www.facebook.com/Matthew.santos1202/', '_blankFB');
+  };
+  const handleGitLink = () => {
+    window.open('https://www.facebook.com/Matthew.santos1202/', '_blankGit');
   };
 
   useEffect(() => {
@@ -26,9 +29,9 @@ function Hero() {
                 <Typed className="z-0 md:text-5xl sm:text-4xl text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-500 via-slate-500 to-slate-800" strings={['Front-End Web Developer', 'React Developer']}  typeSpeed={40 }backSpeed={50}
                  loop />
          <div className='flex py-5' data-aos='fade-up' >   
-               <Tooltip content="Github" placement="bottom-end" className="text-black bg-slate-400 px-3 font-poppins font-bold"  animate={{ mount: { scale: 1, y: 5 },unmount: { scale: 0, y: 0 },}}><a href='#'><AiFillGithub className='mr-2 transition duration-300 transform hover:scale-125' size={40}  /></a></Tooltip>
-               <Tooltip content="LinkedIn" placement="bottom-end" className="text-black bg-slate-400 px-3 font-poppins font-bold" animate={{ mount: { scale: 1, y: 5 },unmount: { scale: 0, y: 0 },}}><a href='#'><AiFillLinkedin className='mr-2 transition duration-300 transform hover:scale-125' size={40}  /></a></Tooltip>
-               <Tooltip content="Facebook" placement="bottom-end" className="text-black bg-slate-400 px-3 font-poppins font-bold" animate={{ mount: { scale: 1, y: 5 },unmount: { scale: 0, y: 0 },}}><a href='https://www.facebook.com/Matthew.santos1202/' target="_blank" rel="noopener noreferrer" onClick={handleFbLink}><AiFillFacebook className='transition duration-300 transform hover:scale-125' size={40} /> </a></Tooltip>
+               <Tooltip content="Github" placement="bottom-end" className="text-black bg-slate-400 px-3 font-poppins font-bold"  animate={{ mount: { scale: 1, y: 5 },unmount: { scale: 0, y: 0 },}}><a href='https://github.com/R0su/' target="_blankGit" rel="noopener noreferrer" onClick={handleGitLink}><AiFillGithub className='mr-2 transition duration-300 transform hover:scale-125' size={40}  /></a></Tooltip>
+               <Tooltip content="LinkedIn" placement="bottom-end" className="text-black bg-slate-400 px-3 font-poppins font-bold" animate={{ mount: { scale: 1, y: 5 },unmount: { scale: 0, y: 0 },}}><a href='/' target="_blank" rel="noopener noreferrer" onClick={handleFbLink}><AiFillLinkedin className='mr-2 transition duration-300 transform hover:scale-125' size={40}  /></a></Tooltip>
+               <Tooltip content="Facebook" placement="bottom-end" className="text-black bg-slate-400 px-3 font-poppins font-bold" animate={{ mount: { scale: 1, y: 5 },unmount: { scale: 0, y: 0 },}}><a href='https://www.facebook.com/Matthew.santos1202/' target="_blankFB" rel="noopener noreferrer" onClick={handleFbLink}><AiFillFacebook className='transition duration-300 transform hover:scale-125' size={40} /> </a></Tooltip>
            </div>
                 <h1 className="z-0 md:text-sm sm:text-lg text-xs text-slate-500 font-bold  md:ml-0.5">Building creative UI with <span className='text-blue-500'>ReactJS</span> and <span className='text-blue-400 font-bold'>Tailwind CSS</span></h1>
           
