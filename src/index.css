@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+ background-color: white;
+}
+@keyframes hover-zoom {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
