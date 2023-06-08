@@ -4,7 +4,7 @@ import Hero from './components/Hero'
 import AboutMe from './components/AboutMe'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import WhatIdo from './components/whatido'
+import WhatIdo from './components/WhatIDo'
 
 
 import './App.css'
