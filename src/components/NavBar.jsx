@@ -4,6 +4,8 @@ import {AiOutlineClose,AiOutlineMenu} from 'react-icons/ai'
 import { Button,Navbar} from "@material-tailwind/react"
 import { motion} from 'framer-motion'
 import {Link} from 'react-scroll'
+import { Tooltip, Typography } from "@material-tailwind/react";
+import { InformationCircleIcon } from "@heroicons/react/24/outline";
 
 
 function NavBar() {
@@ -45,9 +47,10 @@ function NavBar() {
             <li className='p-4 hover:text-blue-400 focus:bg-gray-30 rounded-full'>
               <Link to="hero" spy={true} smooth={true} offset={-180} duration={500}>Home</Link>
             </li>
-            <li className='p-4 hover:text-blue-400 focus:bg-gray-30 rounded-full'>
+            <li className='p-4 hover:text-blue-400  focus:bg-gray-30 rounded-full'>
               <Link to="/" spy={true} smooth={true} offset={50} duration={500}>Projects</Link>
             </li>
+            
             <li className='p-4 hover:text-blue-400 focus:bg-gray-30 rounded-full'>
               <Link to="aboutme" spy={true} smooth={true} offset={-50} duration={500}>About Me</Link>
             </li>

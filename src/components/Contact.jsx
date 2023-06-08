@@ -13,11 +13,13 @@ function Footer() {
       
       <hr className="my-8 border-none" />
       <div data-aos='fade-up'>
-                <Typography className="text-center md:text-4xl sm:text-4xl text-xl font-poppins font-bold">
+                <Typography className="text-center md:text-4xl sm:text-4xl text-xl font-poppins font-bold md:mb-10">
                   Let's Connect!
                 </Typography>
-                <Typography className="text-center text-4xl font-poppins font-bold">
-                  
+                <Typography className="text-center text-md font-poppins font-normal">
+                  Interested working with me? You can say hello to my e-mail and Mobile number: <br></br>
+                  <span className='text-blue-500 md:text-md'>Matthewsantos120216@gmail.com</span><br></br> 
+                  <span className='text-blue-500 md:text-md'>09300345314</span> 
                 </Typography>
             </div>
     </div>
