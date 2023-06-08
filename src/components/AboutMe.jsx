@@ -66,7 +66,7 @@ function AboutMe() {
            </div>
                   <div class="p-6 text-center">
                         <div><h6 class="mb-4 block md:text-3xl sm:text-2xl font-poppins font-bold leading-relaxed tracking-normal text-slate-500 antialiased uppercase md:mr-5 text-start md:ml-4 "> About Me</h6></div>
-                        <p class="md:ml-5 md:py-5 mb-5block md:text-base sm:text-xl font-normal leading-relaxed text-gray-700 antialiased font-poppins text-justify text-xs indent-10">
+                        <p class="md:ml-5 md:py-5 mb-5block md:text-base sm:text-xl font-normal leading-relaxed text-gray-700 antialiased font-poppins text-justify text-xs indent-10 md:mb-0 mb-10">
                         HI! My name is Ross Matthew Santos. A passionate front-end developer based in Metro Manila, Philippines. I'm a fresh gradudate and a degree holder in Bachelor of Science in Information Technology at Rizal Technological University-Boni Campus.  
                         </p>
                         <p class="md:ml-5 md:mb-8 block md:text-base sm:text-xl font-normal leading-relaxed text-gray-700 antialiased font-poppins text-justify text-xs indent-10">
