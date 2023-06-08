@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import logoB from '../assets/logo-black.png'
 import {AiOutlineClose,AiOutlineMenu} from 'react-icons/ai'
-import { Button,Navbar,Typography} from "@material-tailwind/react"
+import { Button,Navbar} from "@material-tailwind/react"
 import { motion} from 'framer-motion'
 import {Link} from 'react-scroll'
 
@@ -40,7 +40,7 @@ function NavBar() {
         animate={{ opacity: isNavbarVisible ? 1 : 0 }}
         transition={{ duration: 0.3 }}
         className='flex justify-between items-center md:h-24 h-10 md:max-w-[1510px] sm:max-w-[900px]'>
-        <div className="w-80 h-auto md:ml-10 sm:ml-0 ml-1 md:mr-0 sm:mr-0 mr-auto"><img src={logoB} /></div>
+        <div className="md:w-80 md:h-auto w-40 md:ml-10 sm:ml-0 ml-0 md:mr-0 sm:mr-0 mr-auto md:justify-normal sm:justify-normal justify-start"><img src={logoB} /></div>
           <ul className='hidden md:flex text-sm text-black rounded-sm gap-5 font-roboto uppercase font-bold '>
             <li className='p-4 hover:text-blue-400 focus:bg-gray-30 rounded-full'>
               <Link to="hero" spy={true} smooth={true} offset={-180} duration={500}>Home</Link>
