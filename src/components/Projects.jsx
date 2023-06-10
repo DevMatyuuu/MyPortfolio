@@ -7,13 +7,13 @@ function Projects() {
     {
       id:1,
       title:"hello",
-      description:"HAHAHAHHA AWIT",
+      description:"",
       stack:""
     },
     {
       id:2,
       title:"hello",
-      description:"HAHAHHAHA",
+      description:"",
       stack:""
     }
   ]
