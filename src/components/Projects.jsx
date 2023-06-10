@@ -26,7 +26,7 @@ function Projects() {
                 <Card key={item.id} className='mt-6 md:w-100 md:h-80 md:max-w-[700px]  justify-center transition-transform duration-300 transform shadow-md' >
                   <CardBody>
                     <Typography className='mt-2'>{item.title}</Typography>
-                    <Typography className='mt-2'>{item.description}</Typography>
+                    <Typography className='mt-2'></Typography>
                   </CardBody>
                 </Card>
                 ))}
