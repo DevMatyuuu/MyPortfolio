@@ -16,10 +16,10 @@ function Footer() {
                 <Typography className="text-center md:text-4xl sm:text-4xl text-xl font-poppins font-bold md:mb-10">
                   Let's Connect!
                 </Typography>
-                <Typography className="text-center text-md font-poppins font-normal">
+                <Typography className="text-center md:text-md text-sm font-poppins font-normal">
                   Interested working with me? You can say hello to my e-mail and Mobile number: <br></br>
-                  <span className='text-blue-500 md:text-md'>Matthewsantos120216@gmail.com</span><br></br> 
-                  <span className='text-blue-500 md:text-md'>09300345314</span> 
+                  <span className='text-blue-500 md:text-md text-sm'>Matthewsantos120216@gmail.com</span><br></br> 
+                  <span className='text-blue-500 md:text-md text-sm'>09300345314</span> 
                 </Typography>
             </div>
     </div>

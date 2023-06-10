@@ -38,7 +38,7 @@ function WhatIdo() {
                 {data.map((item) => (
                 <div key={item.id} data-aos="fade-up"
                 data-aos-duration={item.duration} className='grid h-60  md:w-80 w-80 m-auto justify-center '>
-                        <div className='ml-2'><img className="relative md:ml-28 sm:ml-0 ml-28 h-20 w-20" src={item.image} /></div>
+                        <div className='ml-2'><img className="relative md:ml-28 sm:ml-0 ml-28 h-20 w-20 hover:scale-105" src={item.image} /></div>
                         <p className='text-center md:mb-5 md:text-2xl'>{item.title}</p>
                         <p className='text-center md:text-lg'>{item.description}</p>
                     

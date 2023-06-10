@@ -5,6 +5,7 @@ import AboutMe from './components/AboutMe'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import WhatIdo from './components/WhatIDo'
+import Projects from './components/Projects'
 
 
 import './App.css'
@@ -19,6 +20,7 @@ function App() {
       <Hero />
       <AboutMe />
       <WhatIdo />
+      <Projects />
       <Contact />
       <Footer />
      </div>
