@@ -67,7 +67,7 @@ function AboutMe() {
 
 
   return (
-    <section className="grid md:grid-cols-2 sm:grid-col grid-col md:justify-center sm:justify-center justify-center md:py-0 md:ml-20 m-auto md:gap-0 sm:gap-5 gap-5  text-center " id='aboutme'>
+    <section className="grid md:grid-cols-2 sm:grid-col grid-col md:justify-center sm:justify-center justify-center md:py-0 md:ml-20 m-auto md:gap-0 sm:gap-20 gap-5  text-center " id='aboutme'>
          
           <div data-aos="zoom-in" data-aos-duration="500" class="md:flex w-full h-100 md:max-w-[100rem] sm:max-w-[30rem] max-w-[20rem] md:ml-10 m-auto flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-2xl md:py-0  md:mt-40" >
           <div class="md:m-0 md:w-80 md:h-auto sm:h-auto h-auto sm:auto w-auto  shrink-0 overflow-hidden md:rounded-xl rounded-xl md:rounded-r-none bg-white bg-clip-border text-gray-700 shadow-2xl flex justify-center">

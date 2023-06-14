@@ -33,7 +33,7 @@ function Hero() {
   }, [])
      
   return (
-    <section className='grid grid-cols-1 md:grid-cols-2 md:h-100 sm:h-auto  mt-9 md:ml-10 mb-40' id='hero'>
+    <section className='grid grid-cols-1 md:grid-cols-2 md:h-100 sm:h-auto  md:mt-9 sm:mt-20 mt-28 md:ml-10 mb-40' id='hero'>
          <div data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1000" className="md:py-20 sm:py-0 md:mt-12 sm:mt-20 text-start md:ml-20 ml-10 justify-start font-poppins md:h-100 h-20 md:w-full">
                 <h1 className="md:relative md:text-6xl sm:text-5xl text-2xl mt-6 sm:mt-0 mr-5 font-bold text-black justify-start text-start md:mb-2">Hi! I'm Matthew Santos</h1>
                 <Typed className="z-0 md:text-5xl sm:text-4xl text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-500 via-slate-500 to-slate-800" strings={['Front-End Web Developer', 'React Developer']}  typeSpeed={40 }backSpeed={50}
@@ -50,7 +50,7 @@ function Hero() {
                data-ripple-dark="true">Resume pdf</Button>
           </div>
     </div>
-    <div data-aos='fade-down' data-aos-duration='1000' className='md:py-0 md:mt-2 py-80 md:ml-4 ml-6 md:max-w-[680px] sm:max-w-auto max-w-auto md:h-80 sm:h-auto h-60'>
+    <div data-aos='fade-down' data-aos-duration='1000' className='md:py-0 md:mt-2 py-40 md:ml-4 ml-6 md:max-w-[680px] sm:max-w-auto max-w-auto md:h-80 md:mb-0 sm:mb-80 mb-40 msm:h-auto h-60'>
           <Lottie animationData={animationData}/>
       
     </div>
