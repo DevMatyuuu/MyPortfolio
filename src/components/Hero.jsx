@@ -6,6 +6,8 @@ import 'aos/dist/aos.css';
 import { Button, Tooltip } from '@material-tailwind/react';
 import {AiFillGithub, AiFillLinkedin, AiFillFacebook,} from 'react-icons/ai'
 import resumePDF from '../assets/resume/RMSantos-resume.pdf';
+import Lottie from 'lottie-react'
+import animationData from '../assets/animated/hero.json'
 
 
 
@@ -31,8 +33,8 @@ function Hero() {
   }, [])
      
   return (
-    <section className='grid grid-cols-1 md:grid-cols-2 md:h-100 sm:h-auto  mt-20 md:ml-10 mb-40' id='hero'>
-         <div data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1000" className="md:py-20 sm:py-0 md:mt-4 sm:mt-20 text-start md:ml-20 ml-10 justify-start font-poppins md:h-100 h-20 md:w-full">
+    <section className='grid grid-cols-1 md:grid-cols-2 md:h-100 sm:h-auto  mt-9 md:ml-10 mb-40' id='hero'>
+         <div data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1000" className="md:py-20 sm:py-0 md:mt-12 sm:mt-20 text-start md:ml-20 ml-10 justify-start font-poppins md:h-100 h-20 md:w-full">
                 <h1 className="md:relative md:text-6xl sm:text-5xl text-2xl mt-6 sm:mt-0 mr-5 font-bold text-black justify-start text-start md:mb-2">Hi! I'm Matthew Santos</h1>
                 <Typed className="z-0 md:text-5xl sm:text-4xl text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-500 via-slate-500 to-slate-800" strings={['Front-End Web Developer', 'React Developer']}  typeSpeed={40 }backSpeed={50}
                  loop />
@@ -43,13 +45,13 @@ function Hero() {
            </div>
                 <h1 className="z-0 md:text-sm sm:text-lg text-xs text-slate-500 font-bold  md:ml-0.5">Building creative UI with <span className='text-blue-500'>ReactJS</span> and <span className='text-blue-400 font-bold'>Tailwind CSS</span></h1>
           
-          <div className="md:py-1 py-2 text-start justify-start">
+          <div className="md:py-1 py-2 text-start justify-start md:mt-2">
                <Button onClick={handleResumeButton} target="_blackresume" className="middle none center mr-3 rounded-md border md:mt-10 sm:mt-5 mt-5 border-black md:py-4 md:px-9 py-3 px-3 font-sans md:text-md text-xs font-bold uppercase text-black transition-all hover:opacity-75  active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none hover:bg-slate-300"
                data-ripple-dark="true">Resume pdf</Button>
           </div>
     </div>
-    <div className='md:py-14 md:mt-20 py-80 md:ml-0 ml-6 md:max-w-[680px] sm:max-w-auto max-w-auto md:h-100 sm:h-auto h-60'>
-          <img data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-duration="1000" src={heroImg}></img>
+    <div data-aos='fade-down' data-aos-duration='1000' className='md:py-0 md:mt-2 py-80 md:ml-4 ml-6 md:max-w-[680px] sm:max-w-auto max-w-auto md:h-80 sm:h-auto h-60'>
+          <Lottie animationData={animationData}/>
       
     </div>
     

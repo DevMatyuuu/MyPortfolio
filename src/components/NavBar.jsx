@@ -51,12 +51,11 @@ function NavBar() {
             <li className='p-4 hover:text-blue-400 focus:bg-gray-30 rounded-full'>
               <Link to="hero" spy={true} smooth={true} offset={-180} duration={500}>Home</Link>
             </li>
+            <li className='p-4 hover:text-blue-400 focus:bg-gray-30 rounded-full'>
+              <Link to="aboutme" spy={true} smooth={true} offset={8} duration={500}>About Me</Link>
+            </li>
             <li className='p-4 hover:text-blue-400  focus:bg-gray-30 rounded-full'>
               <Link to="Projects" spy={true} smooth={true} offset={50} duration={700}>Projects</Link>
-            </li>
-            
-            <li className='p-4 hover:text-blue-400 focus:bg-gray-30 rounded-full'>
-              <Link to="aboutme" spy={true} smooth={true} offset={-50} duration={500}>About Me</Link>
             </li>
             <li className='p-4 hover:text-blue-400 focus:bg-gray-30 rounded-full'>
               <Link to="contact" spy={true} smooth={true} offset={50} duration={1000}>Contact Me</Link>
