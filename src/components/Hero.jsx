@@ -4,7 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Button, Tooltip } from '@material-tailwind/react';
 import {AiFillGithub, AiFillLinkedin, AiFillFacebook,} from 'react-icons/ai'
-import resumePDF from '../assets/resume/Ross Matthew Santos - resume.pdf';
+import resumePDF from '../assets/resume/resume.pdf';
 import Lottie from 'lottie-react'
 import heroAnimation from '../assets/animated/hero.json'
 import scrollAnimation from '../assets/animated/scroll.json'
