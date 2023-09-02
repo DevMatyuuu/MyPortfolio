@@ -40,14 +40,14 @@ function NavBar() {
   }
     
   return (
-    <Navbar className="sticky md:inset-2 inset-10 z-10 h-max max-w-full rounded-none bg-transparent cursor-pointer border-none shadow-none">
+    <Navbar className="sticky lg:inset-5 inset-10 z-10 h-max max-w-full rounded-none bg-transparent cursor-pointer border-none shadow-none">
         <motion.div 
         initial={{ opacity: 1 }}
         animate={{ opacity: isNavbarVisible ? 1 : 0 }}
         transition={{ duration: 0.3 }}
-        className='flex justify-between items-center md:h-24 h-10 md:max-w-[1510px] sm:max-w-[900px]'>
-        <div className="md:w-80 md:h-auto w-40 md:ml-10 sm:ml-0 ml-0 md:mr-0 sm:mr-0 mr-auto md:justify-normal sm:justify-normal justify-start"><img src={logoB} /></div>
-          <ul className='hidden md:flex text-sm text-black rounded-sm gap-3 font-roboto uppercase font-bold '>
+        className='flex justify-between items-center lg:h-24 h-10 lg:max-w-[1510px] sm:max-w-[900px]'>
+        <div className="lg:w-80 lg:h-auto w-40 lg:ml-10 sm:ml-0 ml-0 lg:mr-0 sm:mr-0 mr-auto lg:justify-normal sm:justify-normal justify-start"><img src={logoB} /></div>
+          <ul className='hidden lg:flex text-sm text-black rounded-sm gap-3 font-roboto uppercase font-bold '>
             <li className='p-4 hover:text-blue-400 focus:bg-gray-30 rounded-full'>
               <Link to="hero" spy={true} smooth={true} offset={-180} duration={500}>Home</Link>
             </li>
@@ -62,11 +62,11 @@ function NavBar() {
             </li>
           </ul>
     
-          <div onClick={handleNav} className='block md:hidden md:mr-0 sm:mr-10 mr-5 px-5 '>
+          <div onClick={handleNav} className='block lg:hidden lg:mr-0 sm:mr-10 mr-5 px-5 '>
             {!nav ?  <AiOutlineMenu size={20} color='black'/> : <AiOutlineClose size={20} color='black'  />}
           </div>
-          <div className={!nav ? 'fixed right-[-100%] top-20 w-[60%] h-full text-center justify-center bg-slate-400 ease-out duration-500': 'fixed right-0 top-20 w-[50%] h-full text-center justify-center bg-slate-400 ease-in-out duration-500 md:hidden'}>
-            <ul className='pt-12 uppercase text-white font-bold text-md font-roboto text-center justify-center' >
+          <div className={!nav ? 'fixed right-[-100%] top-20 w-[60%] h-full text-center justify-center bg-slate-400 ease-out duration-500': 'fixed right-0 top-20 w-[50%] h-full text-center justify-center bg-slate-400 ease-in-out duration-500 lg:hidden'}>
+            <ul className='pt-12 uppercase text-white font-bold text-lg font-roboto text-center justify-center' >
                 <li className='p-4 sm:text-xl' href="/Home">
                   <Link to="Hero" spy={true} smooth={true} offset={0} duration={500}>Home</Link>
                 </li>
