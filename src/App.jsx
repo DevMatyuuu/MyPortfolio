@@ -19,7 +19,6 @@ function App() {
       <NavBar />
       <Hero />
       <AboutMe />
-      <WhatIdo />
       <Projects />
       <Contact />
       <Footer />

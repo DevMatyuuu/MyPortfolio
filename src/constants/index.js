@@ -1,5 +1,5 @@
 import reactIcon from '../assets/react-icon.png'
-import cssIcon from '../assets/icons/css-icon.png'
+import cssIcon from '../assets/css-icon.png'
 import htmlIcon from '../assets/html-icon.png'
 import jsIcon from '../assets/js-icon.png'
 import tailwindIcon from '../assets/tailwind-icon.png'
