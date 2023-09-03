@@ -1,4 +1,4 @@
-import Mypic from '../assets/aboutMeImg.jpg'
+import Mypic from '../assets/aboutmeImg.jpg'
 import React, {useState} from 'react';
 import { Card, CardBody} from "@material-tailwind/react";
 import  {educ, tech} from '../constants/index'
