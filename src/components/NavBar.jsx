@@ -39,28 +39,33 @@ function NavBar() {
   }, [prevScrollPos]);
     
   return (
-    <Navbar className="sticky lg:inset-5 inset-10 z-10 h-max max-w-full rounded-none bg-transparent cursor-pointer border-none shadow-none">
+    <Navbar className="flex sticky lg:inset-4 inset-5 z-10 h-max justify-center rounded-none bg-transparent cursor-pointer border-none shadow-none mb-36 sm:mb-0 lg:mb-0">
         <motion.div 
         initial={{ opacity: 1 }}
         animate={{ opacity: isNavbarVisible ? 1 : 0 }}
         transition={{ duration: 0.3 }}
-        className='flex justify-between items-center lg:h-24 h-10 lg:max-w-[1550px] sm:max-w-[900px]'>
-        <div className="lg:w-80 lg:h-auto w-40 lg:ml-16 sm:ml-0 ml-0 lg:mr-0 sm:mr-0 mr-auto lg:justify-normal sm:justify-normal justify-start"><img src={logoB} /></div>
-          <ul className='hidden lg:flex text-sm lg:ml-[47%] text-black rounded-sm gap-3 font-roboto uppercase font-bold '>
-            <li className='p-4 hover:text-blue-400 focus:bg-gray-30 rounded-full'>
-              <Link to="hero" spy={true} smooth={true} offset={-180} duration={500}>Home</Link>
-            </li>
-            <li className='p-4 hover:text-blue-400 focus:bg-gray-30 rounded-full'>
-              <Link to="aboutme" spy={true} smooth={true} offset={250} duration={500}>About Me</Link>
-            </li>
-            <li className='p-4 hover:text-blue-400  focus:bg-gray-30 rounded-full'>
-              <Link to="Projects" spy={true} smooth={true} offset={50} duration={700}>Projects</Link>
-            </li>
-            <li className='p-4 hover:text-blue-400 focus:bg-gray-30 rounded-full'>
-              <Link to="contact" spy={true} smooth={true} offset={50} duration={1000}>Contact Me</Link>
-            </li>
-          </ul>
-            <AiOutlineMenu size={24} onClick={modalOpen} className='lg:hidden text-black mr-10' />
+        className='flex justify-start items-center lg:h-24 h-10 lg:max-w-[1550px] sm:max-w-[900px] lg:gap-60'>
+          <div className="absolute lg:left-12 left-[-11px] lg:w-80 lg:h-auto w-40  lg:justify-start sm:justify-normal justify-start">
+            <img src={logoB} />
+          </div>
+          <AiOutlineMenu size={24} onClick={modalOpen} className='absolute right-0 lg:hidden text-black mr-10' />
+        
+        <div className='absolute right-28'>
+            <ul className='hidden lg:flex text-sm text-black rounded-sm gap-3 font-roboto uppercase font-bold '>
+                <li className='p-4 hover:text-blue-400 focus:bg-gray-30 rounded-full'>
+                  <Link to="hero" spy={true} smooth={true} offset={-180} duration={500}>Home</Link>
+                </li>
+                <li className='p-4 hover:text-blue-400 focus:bg-gray-30 rounded-full'>
+                  <Link to="aboutme" spy={true} smooth={true} offset={250} duration={500}>About Me</Link>
+                </li>
+                <li className='p-4 hover:text-blue-400  focus:bg-gray-30 rounded-full'>
+                  <Link to="Projects" spy={true} smooth={true} offset={50} duration={700}>Projects</Link>
+                </li>
+                <li className='p-4 hover:text-blue-400 focus:bg-gray-30 rounded-full'>
+                  <Link to="contact" spy={true} smooth={true} offset={50} duration={1000}>Contact Me</Link>
+                </li>
+              </ul>
+          </div>
             <div>
               <Modal
                 isOpen={openModal}

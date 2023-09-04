@@ -14,18 +14,18 @@ function AboutMe() {
         <p className='text-slate-500 font-semibold lg:text-xl lg:mb-2 text-lg'>Get to know more</p>
         <p className='font-bold lg:text-6xl text-2xl mb-8 lg:mb-0'>About Me</p>
       </h1>
-        <div className='lg:flex justify-start lg:ml-36 lg:gap-10 lg:pt-28'>
+        <div className='lg:flex justify-center lg:gap-10 lg:pt-28'>
           <div className='flex lg:justify-start justify-center'>
             <img src={Mypic} className='lg:h-[60vh] h-[35vh] rounded-xl shadow-xl'/>
           </div>
           <div className='flex'>
             <div className='mx-auto'>
-              <Card className='lg:w-[850px] w-[450px]  lg:h-[47%] lg:py-10 lg:px-10 py-4 px-4 lg:mb-10 mb-7 mt-8 lg:mt-0 shadow-xl border border-black border-r-8 border-b-2'>
+              <Card className='lg:w-[850px] mx-auto lg:mx-o w-[80%] lg:h-[47%] lg:py-10 lg:px-10 py-4 px-4 lg:mb-10 mb-7 mt-8 lg:mt-0 shadow-xl border border-black border-r-8 border-b-2'>
                 <CardBody>
                   <p className='indent-7 lg:text-base text-xs text-justify'>HI! My name is Ross Matthew Santos.  A passionate front-end developer based in Metro Manila, Philippines. I'm a fresh gradudate and a degree holder in Bachelor of Science in Information Technology at Rizal Technological University-Boni Campus. I decided to pursue a career in Front-End Web developing because I want to showcase my skills and talent as well as to contribute in a company by designing quality web pages and making it clean, modern, responsive and detailed. I am always open for new learnings and opportunities to grow as a developer.</p>
                 </CardBody>
               </Card>
-              <Card className='lg:w-[850px] w-[450px] lg:h-[45%] lg:py-8 lg:px-10 py-4 px-4 lg:mb-1 shadow-xl border border-black border-r-8 border-b-2'>
+              <Card className='lg:w-[850px] mx-auto lg:mx-0 w-[80%] lg:h-[45%] lg:py-8 lg:px-10 py-4 px-4 lg:mb-1 shadow-xl border border-black border-r-8 border-b-2'>
                 <CardBody>
                   <h1 className='lg:text-xl text-lg font-semibold'>Education | Experience</h1>
                     <div className='lg:py-6 lg:text-base text-xs mt-5 lg:mt-0'>
