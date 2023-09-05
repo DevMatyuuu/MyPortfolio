@@ -110,7 +110,7 @@ export const proj = [
   },
   {
     title: 'Cloud-Chase',
-    desc: 'Cloud chase is an online vape shop that offers various brands and fulfill your vaping needs with just few clicks',
+    desc: 'Cloud chase is an online vape shop that offers various brands and fulfill your vaping needs with just few clicks.',
   },
 ]
 
