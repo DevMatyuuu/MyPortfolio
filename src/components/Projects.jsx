@@ -15,7 +15,7 @@ function Projects() {
         <Typography className="font-poppins text-lg font-bold text-center text-slate-600 lg:mb-2">Take a look at some of my</Typography>
         <Typography className='font-poppins text-6xl font-bold text-center uppercase text-black lg:mb-20'>Projects</Typography>
       </div>
-      <div className='flex flex-col gap-20'>
+      <div className='flex flex-col gap-10'>
         {proj.map((item) => (
           <Card key={item.title} className='flex mx-auto blur-background h-100 w-[90%] py-20'>
             <CardBody>
