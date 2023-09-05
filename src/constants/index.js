@@ -20,6 +20,10 @@ import asta1 from '../assets/projectsImg/asta1.jpg'
 import asta2 from '../assets/projectsImg/asta2.jpg'
 import asta3 from '../assets/projectsImg/asta3.jpg'
 import asta4 from '../assets/projectsImg/asta4.jpg'
+import cc1 from '../assets/projectsImg/cloud-chase1.jpg'
+import cc2 from '../assets/projectsImg/cloud-chase2.jpg'
+import cc3 from '../assets/projectsImg/cloud-chase3.jpg'
+import cc4 from '../assets/projectsImg/cloud-chase4.jpg'
 
 
 
@@ -130,5 +134,23 @@ export const projImg1 = [
   {
     id: 4,
     image:[asta4],
+  }
+]
+export const projImg2 = [
+  {
+    id: 1,
+    image:[cc1],
+  },
+  {
+    id: 2,
+    image:[cc2],
+  },
+  {
+    id: 3,
+    image:[cc3],
+  },
+  {
+    id: 4,
+    image:[cc4],
   }
 ]

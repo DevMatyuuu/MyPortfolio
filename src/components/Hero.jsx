@@ -34,7 +34,6 @@ function Hero() {
      
   return (
     <section className='flex flex-col lg:flex-row justify-center lg:grid-cols-2 lg:h-[40vh] sm:h-auto h-[65vh]  lg:mt-0 sm:mt-20  mb-40' id='hero'>
-      <div className='absolute top-0 left-0 w-[97%] h-48 bg-gradient-to-br from-slate-200  to-slate-400 rounded-xl filter blur-3xl opacity-75 z-49' />
         <div data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="800" className="lg:py-20 sm:py-0 lg:mt-12 sm:mt-20 text-start px-7 justify-start font-poppins lg:h-100 h-20 lg:w-[47%]">
                   <h1 className="lg:relative lg:text-6xl sm:text-5xl text-3xl mt-6 sm:mt-0 mr-5 font-bold text-black justify-start text-start lg:mb-2">Hi! I'm <span className='bg-clip-text text-transparent bg-gradient-to-r from-slate-500 via-slate-500 to-slate-800'>Matthew Santos</span></h1>
                   <Typed className="z-0 lg:text-5xl sm:text-4xl text-xl font-bold bg-clip-text text-black" strings={['Front-End Web Developer', 'React Developer']}  typeSpeed={40 }backSpeed={50}
