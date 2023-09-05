@@ -11,8 +11,8 @@ function AboutMe() {
   return (
     <section className='lg:h-[160vh] lg:pt-72' id='aboutme'>
       <h1 className='text-center'>
-        <p className='text-slate-500 font-semibold lg:text-xl lg:mb-2 text-lg'>Get to know more</p>
-        <p className='font-bold lg:text-6xl text-2xl mb-8 lg:mb-0'>About Me</p>
+        <p className='text-slate-600 font-semibold lg:text-lg lg:mb-2 text-lg font-poppins'>Get to know more</p>
+        <p className='font-bold lg:text-6xl text-2xl mb-8 lg:mb-0 font-poppins uppercase'>About Me</p>
       </h1>
         <div className='lg:flex justify-center lg:gap-10 lg:pt-28'>
           <div className='flex lg:justify-start justify-center'>

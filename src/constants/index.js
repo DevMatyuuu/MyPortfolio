@@ -16,6 +16,10 @@ import reactIcon2 from '../assets/react-icon2.png'
 import tsIcon2 from '../assets/ts-icon2.png'
 import tailwindIcon2 from '../assets/tailwind-icon2.png'
 import phpIcon2 from '../assets/php-icon2.png'
+import asta1 from '../assets/projectsImg/asta1.jpg'
+import asta2 from '../assets/projectsImg/asta2.jpg'
+import asta3 from '../assets/projectsImg/asta3.jpg'
+import asta4 from '../assets/projectsImg/asta4.jpg'
 
 
 
@@ -98,3 +102,33 @@ export const educ = [
         place: 'Erovoutika Electronics Robotics Automation | OJT'
     },
   ]
+
+export const proj = [
+  {
+    title: 'ASTA (A Simple Task Assistant)',
+    desc:'ASTA is a simple To-Do web app that provides modern functionality in a minimalist design. It has a Drag and Drop and Dark mode features that guarantees convenience for the user.',
+  },
+  {
+    title: 'Cloud-Chase',
+    desc: 'Cloud chase is an online vape shop that offers various brands and fulfill your vaping needs with just few clicks',
+  },
+]
+
+export const projImg1 = [
+  {
+    id: 1,
+    image:[asta1],
+  },
+  {
+    id: 2,
+    image:[asta2],
+  },
+  {
+    id: 3,
+    image:[asta3],
+  },
+  {
+    id: 4,
+    image:[asta4],
+  }
+]

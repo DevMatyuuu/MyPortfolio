@@ -39,7 +39,7 @@ function NavBar() {
   }, [prevScrollPos]);
     
   return (
-    <Navbar className="flex sticky lg:inset-4 inset-5 z-10 h-max justify-center rounded-none bg-transparent cursor-pointer border-none shadow-none mb-36 sm:mb-0 lg:mb-0">
+    <Navbar className="flex sticky lg:inset-4 inset-5 z-10 h-max justify-center rounded-none bg-transparent backdrop-blur-0 cursor-pointer border-none shadow-none mb-36 sm:mb-0 lg:mb-0">
         <motion.div 
         initial={{ opacity: 1 }}
         animate={{ opacity: isNavbarVisible ? 1 : 0 }}
@@ -70,7 +70,6 @@ function NavBar() {
               <Modal
                 isOpen={openModal}
                 contentLabel="Modal"
-                onRequestClose={!openModal}
                 className='modal fixed inset-0 flex items-center justify-center bg-transparent'
                 overlayClassName="modal-overlay fixed inset-0 bg-black bg-opacity-25 flex items-center justify-center">
                   <Card className='h-[70vh] w-[80%] border-2 border-black' data-aos='fade-down' data-duration='1000'>
@@ -79,10 +78,10 @@ function NavBar() {
                           <IoClose onClick={modalClose} className='absolute right-5 mt-5 cursor-pointer' />
                         </div>
                         <div className='flex flex-col text-center mt-24 gap-10 text-2xl uppercase'>
-                          <Link>Home</Link>
-                          <Link>Project</Link>
-                          <Link>About Me</Link>
-                          <Link>Contact Me</Link>
+                          <Link to=''>Home</Link>
+                          <Link to=''>Project</Link>
+                          <Link to=''>About Me</Link>
+                          <Link to=''>Contact Me</Link>
                         </div>
                     </CardBody>
                   </Card>
