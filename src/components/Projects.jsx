@@ -29,8 +29,8 @@ function Projects() {
   return (
     <section id='Projects' className='h-[140vh] w-auto lg:mt-40 mt-20'>
       <div>
-        <Typography className="font-poppins text-lg font-bold text-center text-slate-600 lg:mb-2">Take a look at some of my</Typography>
-        <Typography className='font-poppins lg:text-6xl text-2xl font-bold text-center uppercase text-black lg:mb-16'>Projects</Typography>
+        <Typography className="font-poppins lg:text-lg text-sm font-bold text-center text-slate-600 lg:mb-2">Take a look at some of my</Typography>
+        <Typography className='font-poppins lg:text-6xl text-4xl font-bold text-center uppercase text-black lg:mb-16'>Projects</Typography>
       </div>
       <div className='flex flex-col lg:gap-32'>
         {proj.map((item) => (
