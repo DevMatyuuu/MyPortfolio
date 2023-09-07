@@ -130,18 +130,21 @@ export const services = [
       number: '01',
       title:"Responsive Design",
       description:"Build reponsive designs for Desktop, Laptop, Tablet and Mobile.",
+      duration: 400
   },
   {
       id:2,
       number: '02',
       title:"Detailed",
       description:"Double Check every details to provide clean and quality design.",
+      duration: 700
   },
   {
       id:3,
       number: '03',
       title:"Flexibility",
       description:"Can adapt to any type of design such as modern or Minimalist.",
+      duration: 1000
   },
 ]
 
