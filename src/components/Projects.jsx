@@ -65,11 +65,11 @@ function Projects() {
                   ))}
                   </div>
                   <div className='flex text-white lg:text-sm text-xs'>
-                    <Card onClick={item.title === 'Cloud-Chase' ? handleCloudRepoLink : handleAstaRepoLink} className='flex flex-row lg:ml-16 py-2 px-2 items-center lg:px-3 lg:py-2 lg:gap-2 gap-1 bg-black hover:scale-105 cursor-pointer'>
+                    <Card onClick={item.title === 'Cloud Chase' ? handleCloudRepoLink : handleAstaRepoLink} className='flex flex-row lg:ml-16 py-2 px-2 items-center lg:px-3 lg:py-2 lg:gap-2 gap-1 bg-black hover:scale-105 cursor-pointer'>
                       <AiFillGithub size={20} />
                       <p>Github</p>
                     </Card>
-                    <Card onClick={item.title === 'Cloud-Chase' ? handleCloudDemoLink : handleAstaDemoLink} className='flex flex-row lg:ml-5 ml-3 py-2 px-2 items-center lg:px-3 lg:py-2 lg:gap-2 gap-1 bg-black hover:scale-105 cursor-pointer'>
+                    <Card onClick={item.title === 'Cloud Chase' ? handleCloudDemoLink : handleAstaDemoLink} className='flex flex-row lg:ml-5 ml-3 py-2 px-2 items-center lg:px-3 lg:py-2 lg:gap-2 gap-1 bg-black hover:scale-105 cursor-pointer'>
                       <AiOutlineGlobal size={20}/>
                       <p>Demo</p>
                     </Card>

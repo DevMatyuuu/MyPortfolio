@@ -117,7 +117,7 @@ export const proj = [
   },
   {
     id: 2,
-    title: 'Cloud-Chase',
+    title: 'Cloud Chase',
     desc: 'Cloud chase is an online vape shop that offers various brands and fulfill your vaping needs with just few clicks.',
     stack: ['React', 'Tailwind', 'ContextAPI', 'Strapi', 'Material-Tailwind'],
     images: [cc1, cc2, cc3, cc4]
