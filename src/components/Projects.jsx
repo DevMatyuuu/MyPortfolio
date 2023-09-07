@@ -27,7 +27,7 @@ function Projects() {
   };
 
   return (
-    <section id='Projects' className='flex flex-col h-[140vh] w-auto lg:mt-40 mt-20'>
+    <section id='Projects' className='h-[140vh] w-auto lg:mt-40 mt-20'>
       <div>
         <Typography className="font-poppins text-lg font-bold text-center text-slate-600 lg:mb-2">Take a look at some of my</Typography>
         <Typography className='font-poppins lg:text-6xl text-2xl font-bold text-center uppercase text-black lg:mb-16'>Projects</Typography>
@@ -37,7 +37,7 @@ function Projects() {
           <Card key={item.id} className='flex mx-auto blur-background h-100 lg:w-[100%] w-[80%] py-10'>
             <CardBody>
               <div className='flex lg:flex-row flex-col mx-auto gap-10 w-[90%]'>
-                <div className='absolute top-0 left-0 w-[97%] h-96 bg-gradient-to-br lg:mt-0 mt-10 from-slate-100  to-slate-400 rounded-xl filter blur-3xl opacity-75 z-49' /> 
+                <div className='absolute bottom-50 left-0 w-[97%] h-96 bg-gradient-to-br lg:mt-0 mt-10 from-slate-100  to-slate-400 rounded-xl filter blur-3xl opacity-75 z-49' /> 
                 <Swiper
                 effect={'cards'}
                 loop={false}
