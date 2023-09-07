@@ -109,48 +109,18 @@ export const educ = [
 
 export const proj = [
   {
+    id: 1,
     title: 'ASTA (A Simple Task Assistant)',
     desc:'ASTA is a simple To-Do web app that provides modern functionality in a minimalist design. It has a Drag and Drop and Dark mode features that guarantees convenience for the user.',
+    stack: ['React', 'Typescript', 'Tailwind', 'Zustand', 'Material-Tailwind'],
+    images: [asta1, asta2, asta3, asta4]
   },
   {
+    id: 2,
     title: 'Cloud-Chase',
     desc: 'Cloud chase is an online vape shop that offers various brands and fulfill your vaping needs with just few clicks.',
+    stack: ['React', 'Tailwind', 'ContextAPI', 'Material-Tailwind'],
+    images: [cc1, cc2, cc3, cc4]
   },
 ]
 
-export const projImg1 = [
-  {
-    id: 1,
-    image:[asta1],
-  },
-  {
-    id: 2,
-    image:[asta2],
-  },
-  {
-    id: 3,
-    image:[asta3],
-  },
-  {
-    id: 4,
-    image:[asta4],
-  }
-]
-export const projImg2 = [
-  {
-    id: 1,
-    image:[cc1],
-  },
-  {
-    id: 2,
-    image:[cc2],
-  },
-  {
-    id: 3,
-    image:[cc3],
-  },
-  {
-    id: 4,
-    image:[cc4],
-  }
-]
