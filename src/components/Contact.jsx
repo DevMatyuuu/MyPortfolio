@@ -43,7 +43,7 @@ function Footer() {
         <p className='text-slate-600 font-semibold lg:mb-2 text-lg font-poppins'>Get In Touch</p>
         <p className='font-bold lg:text-6xl text-2xl mb-8 lg:mb-0 font-poppins uppercase'>Contact</p>
     </h1>
-    <div className="py-8 lg:py-16 px-6 lg:mx-auto lg:max-w-[60%] sl:max-w-[1000px] sm:max-w-[600px] lg:mt-10 sl:mt-5 sm:mt-5 sm:mb-5 mt-5 mb-5 sl:mb-5 md:mb-10 rounded-xl bg-white border-2 border-r-8 border-b-4 border-black">
+    <div className="py-8 lg:py-16 px-6 lg:mx-auto lg:max-w-[60%] sl:max-w-[1000px] sm:max-w-[600px] lg:mt-10 sl:mt-5 sm:mt-5 sm:mb-5 mt-5 mb-5 sl:mb-5 md:mb-10 rounded-xl bg-white border-2 lg:border-r-8 lg:border-b-4 border-black">
             <h2 className="mb-2 sl:text-4xl lg:text-4xl sm:text-2xl tracking-tight font-poppins font-bold text-center text-black uppercase">Let's Connect</h2>
             <h4 className='text-center mb-7 lg:text-base text-sm'>Need a Web designer / Web Developer to work with? You can send me an Email using the form below. Have a nice day!</h4>
             <form onSubmit={handleSubmit} className="space-y-8 px-8">
