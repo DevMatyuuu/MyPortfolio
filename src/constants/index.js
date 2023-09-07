@@ -119,8 +119,32 @@ export const proj = [
     id: 2,
     title: 'Cloud-Chase',
     desc: 'Cloud chase is an online vape shop that offers various brands and fulfill your vaping needs with just few clicks.',
-    stack: ['React', 'Tailwind', 'ContextAPI', 'Material-Tailwind'],
+    stack: ['React', 'Tailwind', 'ContextAPI', 'Strapi', 'Material-Tailwind'],
     images: [cc1, cc2, cc3, cc4]
+  },
+]
+
+export const services = [
+  {
+      id:1,
+      number: '01',
+      title:"Responsive Design",
+      description:"Build reponsive designs for Desktop, Laptop, Tablet and Mobile.",
+      duration: 400
+  },
+  {
+      id:2,
+      number: '02',
+      title:"Detailed",
+      description:"Double Check every details to provide clean and quality design.",
+      duration: 700
+  },
+  {
+      id:3,
+      number: '03',
+      title:"Flexibility",
+      description:"Can adapt to any type of design such as modern or Minimalist.",
+      duration: 1000
   },
 ]
 

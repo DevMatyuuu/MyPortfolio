@@ -8,9 +8,13 @@ export default {
     extend: {
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],
-        poppins: ['poppins', 'sans-serif']
+        poppins: ['poppins', 'sans-serif'],
+        Oswald: ['oswald', 'sans-serif']
     },
+    backgroundImage: {
+      'contactBG': "url('./assets/contactBG.jpg')",
   },
+},
   
   plugins: [],
 }

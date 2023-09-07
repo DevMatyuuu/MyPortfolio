@@ -20,6 +20,7 @@ function App() {
       <Hero />
       <AboutMe />
       <Projects />
+      <WhatIdo />
       <Contact />
       <Footer />
      </div>

@@ -10,16 +10,13 @@ function Footer() {
 
   return (
     <section className='mb-10 '>
-         <div className="w-full bg-white p-8">
-           
-      <hr className="my-8 border-blue-gray-50" />
-            
-            
-      <Typography color="blue-gray" className="text-center font-normal">
-        &copy; 2023 design and developed by Matthew Santos.
-      </Typography>
-    </div>
-    </section>
+         <div className="w-full bg-white">
+          <hr className=" border-blue-gray-50" />  
+            <Typography color="blue-gray" className="text-center font-normal pt-10">
+              &copy; 2023 design and developed by Matthew Santos.
+            </Typography>
+        </div>
+  </section>
   )
 }
 
