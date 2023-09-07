@@ -4,7 +4,7 @@ import { services } from '../constants'
 
 function WhatIdo() {
   return (
-    <section className='font-poppins lg:mt-40 mt-5 mb-20 lg:mb-0'>
+    <section className='font-poppins lg:mt-40 mt-5 mb-40 lg:mb-0'>
         <div className=' lg:h-[77vh] h-100 bg-white'>
             <h1 className='text-center'>
                 <p className='text-slate-600 font-semibold lg:mb-2 text-lg font-poppins'>My Offered</p>
