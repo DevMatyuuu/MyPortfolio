@@ -32,7 +32,7 @@ function Projects() {
         <Typography className="font-poppins text-lg font-bold text-center text-slate-600 lg:mb-2">Take a look at some of my</Typography>
         <Typography className='font-poppins lg:text-6xl text-2xl font-bold text-center uppercase text-black lg:mb-16'>Projects</Typography>
       </div>
-      <div className='flex flex-col lg:gap-10'>
+      <div className='flex flex-col lg:gap-32'>
         {proj.map((item) => (
           <Card key={item.id} className='flex mx-auto blur-background h-100 lg:w-[100%] w-[80%] py-10'>
             <CardBody>
