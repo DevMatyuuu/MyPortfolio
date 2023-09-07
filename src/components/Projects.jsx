@@ -37,7 +37,9 @@ function Projects() {
           <Card key={item.id} className='flex mx-auto blur-background h-100 lg:w-[100%] w-[80%] py-10'>
             <CardBody>
               <div className='flex lg:flex-row flex-col mx-auto gap-10 w-[90%]'>
-              <div className='absolute top-0 left-0 w-[97%] h-96 bg-gradient-to-br lg:mt-0 mt-10 from-slate-100  to-slate-400 rounded-xl filter blur-3xl opacity-75 z-49' /> 
+              <div>
+                <div className='absolute top-0 left-0 w-[97%] h-96 bg-gradient-to-br lg:mt-0 mt-10 from-slate-100  to-slate-400 rounded-xl filter blur-3xl opacity-75 z-49' /> 
+              </div>
                 <Swiper
                 effect={'cards'}
                 loop={false}
