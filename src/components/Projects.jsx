@@ -37,13 +37,13 @@ function Projects() {
           <Card key={item.id} className='flex mx-auto blur-background h-100 lg:w-[100%] w-[80%] py-10'>
             <CardBody>
               <div className='flex lg:flex-row flex-col mx-auto gap-10 w-[90%]'>
-                <div className='absolute left-0 w-[97%] h-96 bg-gradient-to-br lg:mt-0 mt-10 from-slate-100  to-slate-400 rounded-xl filter blur-3xl opacity-75 z-49' /> 
+                <div className='absolute left-0 w-[97%] h-96 bg-gradient-to-br lg:mt-0 mt-10 from-slate-100  to-slate-400 rounded-2xl filter blur-3xl opacity-50 z-49' /> 
                 <Swiper
                 effect={'cards'}
                 loop={false}
                 slidesPerView={'auto'}
                 autoplay={true}
-                className='lg:w-[65%]'
+                className='lg:w-[65%] lg:mt-8'
                 grabCursor={true}
                 cardsEffect={{ slideShadows: false }}
                 modules={[EffectCards]}
