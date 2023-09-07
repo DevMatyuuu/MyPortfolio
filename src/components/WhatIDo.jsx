@@ -12,8 +12,7 @@ function WhatIdo() {
             </h1>
             <div className='grid md:grid-cols-3 sm:-grid-cols-1 grid-cols-1 md:h-80 lg:w-[95%] mx-5 text-white md:gap-0 gap-16 '>
                 {services.map((item) => (
-                <div key={item.id} data-aos="fade-up"
-                data-aos-duration={item.duration} className='grid lg:h-60  lg:w-80 w-60 text-black mx-auto'>
+                <div key={item.id} className='grid lg:h-60  lg:w-80 w-60 text-black mx-auto'>
                         <div className='flex lg:flex-row flex-col lg:items-center lg:gap-10'>
                             <p className='text-slate-300 font-semibold lg:text-9xl text-5xl mb-4 lg:mb-0 font-Oswald'>{item.number}</p>
                             <div className='items-center'>
