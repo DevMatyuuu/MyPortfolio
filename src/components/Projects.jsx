@@ -1,4 +1,6 @@
-import React from 'react';
+import React,{useEffect} from 'react';
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCards } from 'swiper/modules';
 import 'swiper/css/effect-cards';
@@ -27,23 +29,23 @@ function Projects() {
   };
 
   return (
-    <section id='Projects' className='h-[140vh] w-auto lg:mt-40 mt-20'>
+    <section id='Projects' className='h-[140vh] w-auto lg:mt-40 mt-20 -z-50'>
       <div>
         <Typography className="font-poppins lg:text-lg text-xs font-bold text-center text-slate-600 lg:mb-2 mb-1">Take a look at some of my</Typography>
         <Typography className='font-poppins lg:text-6xl text-4xl font-bold text-center uppercase text-black lg:mb-16'>Projects</Typography>
       </div>
       <div className='flex flex-col lg:gap-32'>
         {proj.map((item) => (
-          <Card key={item.id} className='flex mx-auto blur-background h-100 lg:w-[100%] w-[80%] py-10'>
+          <Card data-aos='fade-right' key={item.id} className='flex mx-auto blur-background h-100 lg:w-[100%] w-[80%] py-10'>
             <CardBody>
               <div className='flex lg:flex-row flex-col mx-auto gap-10 w-[90%]'>
-                <div className='absolute left-0 w-[97%] h-96 bg-gradient-to-br lg:mt-0 mt-10 from-slate-100  to-slate-400 rounded-2xl filter blur-3xl opacity-50 z-49' /> 
+                <div className='absolute left-0 w-[97%] h-96 bg-gradient-to-br lg:mt-0 mt-10  from-slate-100  to-slate-400 rounded-2xl filter blur-3xl opacity-50' /> 
                 <Swiper
                 effect={'cards'}
                 loop={false}
                 slidesPerView={'auto'}
                 autoplay={true}
-                className='lg:w-[65%] lg:mt-8'
+                className='lg:w-[65%] lg:mt-8 z-0'
                 grabCursor={true}
                 cardsEffect={{ slideShadows: false }}
                 modules={[EffectCards]}
@@ -54,13 +56,13 @@ function Projects() {
                   </SwiperSlide>
                 ))}
               </Swiper>
-                <div className='flex flex-col gap-5 lg:w-[60%] w-[100%] mx-auto text-center z-50'>
+                <div className='flex flex-col gap-5 lg:w-[60%] w-[100%] mx-auto text-center z-0'>
                   <p className='font-extrabold lg:text-xl text-sm'>{item.title}</p>
                   <p className='text-justify lg:text-base text-sm mx-auto lg:w-[80%]'>{item.desc}</p>
                   <div className='lg:flex lg:gap-5 lg:mx-16 gap-2 grid grid-cols-4 lg:mb-10'>
                   {item.stack.map((stack, index) => (
-                    <div key={index} className='lg:flex'>
-                      <Chip variant='outlined' value={stack} className="rounded-ful border-black lg:px-3 lg:py-2 py-1  lg:text-[10px] text-[7px]" />
+                    <div key={index} className=''>
+                      <Chip variant='outlined' value={stack} className=" border-black lg:px-3 lg:py-2 py-1  lg:text-[10px] text-[7px]" />
                     </div>
                   ))}
                   </div>

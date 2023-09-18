@@ -112,14 +112,14 @@ export const proj = [
     id: 1,
     title: 'ASTA (A Simple Task Assistant)',
     desc:'ASTA is a simple To-Do web app that provides modern functionality in a minimalist design. It has a Drag and Drop and Dark mode features that guarantees convenience for the user.',
-    stack: ['React', 'Typescript', 'Tailwind', 'Zustand', 'Material-Tailwind'],
+    stack: ['React', 'Typescript', 'Beautiful DND', 'Tailwind', 'Zustand', 'Material-Tailwind'],
     images: [asta1, asta2, asta3, asta4]
   },
   {
     id: 2,
     title: 'Cloud Chase',
     desc: 'Cloud chase is an online vape shop that offers various brands and fulfill your vaping needs with just few clicks.',
-    stack: ['React', 'Tailwind', 'ContextAPI', 'Strapi', 'Material-Tailwind'],
+    stack: ['React', 'Tailwind', 'ContextAPI', 'Firebase', 'Material-Tailwind'],
     images: [cc1, cc2, cc3, cc4]
   },
 ]
@@ -137,7 +137,7 @@ export const services = [
       number: '02',
       title:"Detailed",
       description:"Double Check every details to provide clean and quality design.",
-      duration: 700
+      duration: 800
   },
   {
       id:3,

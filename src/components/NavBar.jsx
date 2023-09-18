@@ -39,7 +39,7 @@ function NavBar() {
   }, [prevScrollPos]);
     
   return (
-    <Navbar className="flex sticky lg:inset-4 inset-5 z-10 h-max justify-center rounded-none bg-transparent backdrop-blur-0 cursor-pointer border-none shadow-none mb-36 sm:mb-0 lg:mb-0">
+    <Navbar className={`${!isNavbarVisible ? 'bg-transparent' : 'bg-white'} flex sticky lg:inset-0 inset-0 z-50 lg:h-[14vh] h-max justify-center rounded-none backdrop-blur-0 cursor-pointer border-none shadow-none`}>
         <motion.div 
         initial={{ opacity: 1 }}
         animate={{ opacity: isNavbarVisible ? 1 : 0 }}
@@ -56,13 +56,16 @@ function NavBar() {
                   <Link to="hero" spy={true} smooth={true} offset={-180} duration={500}>Home</Link>
                 </li>
                 <li className='p-4 hover:text-blue-400 focus:bg-gray-30 rounded-full'>
-                  <Link to="aboutme" spy={true} smooth={true} offset={250} duration={500}>About Me</Link>
+                  <Link to="aboutme" spy={true} smooth={true} offset={250} duration={700}>About Me</Link>
                 </li>
                 <li className='p-4 hover:text-blue-400  focus:bg-gray-30 rounded-full'>
-                  <Link to="Projects" spy={true} smooth={true} offset={50} duration={700}>Projects</Link>
+                  <Link to="Projects" spy={true} smooth={true} offset={-20} duration={700}>Projects</Link>
                 </li>
                 <li className='p-4 hover:text-blue-400 focus:bg-gray-30 rounded-full'>
-                  <Link to="contact" spy={true} smooth={true} offset={50} duration={1000}>Contact Me</Link>
+                  <Link to="services" spy={true} smooth={true} offset={-190} duration={700}>Services</Link>
+                </li>
+                <li className='p-4 hover:text-blue-400 focus:bg-gray-30 rounded-full'>
+                  <Link to="contact" spy={true} smooth={true} offset={-20} duration={700}>Contact Me</Link>
                 </li>
               </ul>
           </div>
@@ -70,18 +73,18 @@ function NavBar() {
               <Modal
                 isOpen={openModal}
                 contentLabel="Modal"
-                className='modal fixed inset-0 flex items-center justify-center bg-transparent'
+                className='modal fixed inset-0 flex items-center justify-center z-50'
                 overlayClassName="modal-overlay fixed inset-0 bg-black bg-opacity-25 flex items-center justify-center">
-                  <Card className='h-[70vh] w-[80%] border-2 border-black' data-aos='fade-down' data-duration='1000'>
-                    <CardBody>
+                  <Card className='h-[70vh] w-[80%] border-2 border-black z-50' data-aos='fade-in' data-duration='1000'>
+                    <CardBody className='z-50'>
                         <div>
                           <IoClose onClick={modalClose} className='absolute right-5 mt-5 cursor-pointer' />
                         </div>
                         <div className='flex flex-col text-center mt-24 gap-10 text-2xl uppercase'>
-                          <Link to=''>Home</Link>
-                          <Link to=''>Project</Link>
-                          <Link to=''>About Me</Link>
-                          <Link to=''>Contact Me</Link>
+                          <Link to='hero' spy={true} smooth={true} offset={-180} duration={500} className='cursor-pointer'>Home</Link>
+                          <Link to='Projects' spy={true} smooth={true} offset={-80} duration={500} className='cursor-pointer'>Project</Link>
+                          <Link to='aboutme' spy={true} smooth={true} offset={-20} duration={500} className='cursor-pointer'>About Me</Link>
+                          <Link to='contact' spy={true} smooth={true} offset={180} duration={500} className='cursor-pointer'>Contact Me</Link>
                         </div>
                     </CardBody>
                   </Card>
