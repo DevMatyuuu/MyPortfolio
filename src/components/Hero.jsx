@@ -1,13 +1,9 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-scroll';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { Button, Tooltip } from '@material-tailwind/react';
 import { AiFillGithub, AiFillLinkedin, AiFillFacebook } from 'react-icons/ai';
-import resumePDF from '../assets/resume/resume.pdf';
 import Lottie from 'lottie-react';
 import heroAnimation from '../assets/animated/hero.json';
-import scrollAnimation from '../assets/animated/scroll.json';
 import { motion } from 'framer-motion';
 
 function Hero() {
@@ -24,7 +20,7 @@ function Hero() {
 
   return (
     <section
-    className='flex flex-col sm:flex-row justify-center sm:grid-cols-2 sm:grid-rows-2 sm:h-[100vh] xl:h-[20vh] h-[40vh] mb-[400px] lg:mt-0 sm:mt-20'
+    className='flex flex-col sm:flex-row justify-center mx-auto sm:grid-cols-2 sm:grid-rows-2 sm:h-[30vh] xl:h-[20vh] h-[40vh] mb-[400px] lg:mt-0 sm:mt-20'
     id='hero'
       >
       <div className='xl:hidden lg:hidden absolute top-24 left-0 w-[97%] h-[55vh] bg-gradient-to-br lg:mt-0 mt-10  from-slate-100  to-slate-400 rounded-2xl filter blur-3xl opacity-50' /> 
@@ -32,16 +28,16 @@ function Hero() {
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.2 }}
-        className="lg:py-20 z-0 sm:py-0 PY-0 lg:mt-12 sm:mt-0 text-start px-7 justify-start font-poppins lg:h-100 h-20 lg:w-[47%]"
+        className="lg:py-20 z-0 sm:py-0 lg:mt-12  text-start xl:px-7 px-7 sm:px-0 md:px-0 lg:px-7 justify-start font-poppins lg:h-100 h-40 lg:w-[47%] sm:mt-20 mt-10"
       >
-        <span className='text-3xl xl:text-4xl font-bold'>Hi! I am</span>
+        <span className='text-3xl xl:text-4xl sm:text-4xl font-bold'>Hi! I am</span>
         <motion.h1
           initial={{ opacity: 0, y: 0 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.2 }}
           className='mt-1 xl:mt-2'
         >
-          <span className='flex font-bold bg-clip-text xl:text-7xl text-4xl text-transparent bg-gradient-to-r from-slate-500 via-slate-500 to-slate-800'>
+          <span className='flex font-bold bg-clip-text xl:text-7xl sm:text-6xl text-4xl text-transparent bg-gradient-to-r from-slate-500 via-slate-500 to-slate-800'>
            Matthew Santos
           </span>
         </motion.h1>
@@ -51,14 +47,14 @@ function Hero() {
           transition={{ duration: 0.2, delay: 0.2}}
           className='mt-1 xl:mt-2'
         >
-          <span className='font-bold text-3xl'>Front-End React Developer</span>
+          <span className='font-bold text-3xl sm:text-5xl'>Front-End React Developer</span>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 0 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.2, delay: 0.4 }}
         >
-          <div className='flex py-5' data-aos='fade-up'>
+          <div className='flex py-5'>
             <Tooltip content="Github" placement="bottom-end" className="text-black bg-slate-400 px-3 font-poppins font-bold" animate={{ mount: { scale: 1, y: 5 }, unmount: { scale: 0, y: 0 } }}>
               <a href='https://github.com/DevMatyuuu' target="_blankGit" rel="noopener noreferrer" onClick={handleGitLink}><AiFillGithub className='mr-2 transition duration-300 transform hover:scale-125' size={32} /></a>
             </Tooltip>
@@ -99,19 +95,9 @@ function Hero() {
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3, delay: 1 }}
-        className='hidden lg:block lg:py-0 z-0 lg:mt-10 sm:mt-20 mt-[250px] lg:max-w-[680px] sm:max-w-auto max-w-auto lg:h-80 lg:mb-0 sm:mb-80 mb-40 sm:h-auto'
+        className='hidden sm:hidden md:hidden lg:block lg:py-0 z-0 lg:mt-10 sm:mt-20 mt-[250px] lg:max-w-[680px] sm:max-w-auto max-w-auto lg:h-80 lg:mb-0 sm:mb-80 mb-40 sm:h-auto'
       >
         <Lottie animationData={heroAnimation} />
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 0 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.3, delay: 1.2 }}
-        className='absolute bottom-8 left-1/2 transform -translate-x-1/2 -translate-y-1/2"'
-      >
-        <div className='md:hidden lg:flex hidden sm:hidden '>
-          <Lottie animationData={scrollAnimation} className='lg:h-32 md:h-40 z-50' />
-        </div>
       </motion.div>
     </section>
   );

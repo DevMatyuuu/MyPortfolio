@@ -45,7 +45,7 @@ function NavBar() {
         animate={{ opacity: isNavbarVisible ? 1 : 0 }}
         transition={{ duration: 0.3 }}
         className='flex justify-start items-center lg:h-24 h-10 lg:max-w-[1550px] sm:max-w-[900px] lg:gap-60'>
-          <div className="absolute lg:left-12 left-[-11px] lg:w-80 lg:h-auto w-40  lg:justify-start sm:justify-normal justify-start">
+          <div className="absolute xl:left-12 left-[-11px] lg:w-80 lg:h-auto w-40  lg:justify-start sm:justify-normal justify-start">
             <img src={logoB} />
           </div>
           <AiOutlineMenu size={24} onClick={modalOpen} className='absolute right-0 lg:hidden text-black mr-10' />
@@ -73,7 +73,7 @@ function NavBar() {
               <Modal
                 isOpen={openModal}
                 contentLabel="Modal"
-                className='modal fixed inset-0 flex items-center justify-center z-50'
+                className='modal fixed mx-auto inset-0 flex items-center justify-center z-50'
                 overlayClassName="modal-overlay fixed inset-0 bg-black bg-opacity-25 flex items-center justify-center">
                   <Card className='h-[70vh] w-[80%] border-2 border-black z-50' data-aos='fade-in' data-duration='1000'>
                     <CardBody className='z-50'>

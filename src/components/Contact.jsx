@@ -24,7 +24,8 @@ function Footer() {
     };
 
     emailjs.send (serviceId, templateId, templateParams, publickKey)
-    .then((response) => {
+    .then((res) => {
+      console.log(res, 'Email sent successfully')
       setName('');
       setEmail('');
       setMessage('');
@@ -39,7 +40,7 @@ function Footer() {
   }, [])
   return (
   <section className='h-[94vh] lg:h-[105vh] bg-contactBG bg-cover' id="contact">
-    <h1 className='text-center lg:mb-16'>
+    <h1 className='text-center lg:mb-16 mb-0'>
         <p className='text-slate-600 font-semibold lg:mb-2 text-lg font-poppins'>Get In Touch</p>
         <p className='font-bold lg:text-6xl text-2xl mb-8 lg:mb-0 font-poppins uppercase'>Contact</p>
     </h1>

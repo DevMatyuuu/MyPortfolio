@@ -1,5 +1,4 @@
 import React,{useEffect} from 'react';
-import AOS from 'aos'
 import 'aos/dist/aos.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCards } from 'swiper/modules';

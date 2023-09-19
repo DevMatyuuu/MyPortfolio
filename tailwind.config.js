@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-import roboto from './assets/roboto'
 export default {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
