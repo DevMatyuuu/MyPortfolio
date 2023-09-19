@@ -13,7 +13,7 @@ function Footer() {
          <div className="w-full bg-white">
           <hr className=" border-blue-gray-50" />  
             <Typography color="blue-gray" className="text-center font-normal pt-10">
-              &copy; {currentYear} design and developed by Matthew Santos.
+              &copy; {currentYear} designed and developed by Matthew Santos.
             </Typography>
         </div>
   </section>
