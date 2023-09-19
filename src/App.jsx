@@ -6,6 +6,8 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import WhatIdo from './components/WhatIDo'
 import Projects from './components/Projects'
+import './scrollbar.css'
+
 
 
 import './App.css'
@@ -14,7 +16,7 @@ function App() {
   
 
   return (
-     <div className='bg-white'>
+     <div className='custom-scrollbar bg-white'>
       <NavBar />
       <Hero />
       <AboutMe />

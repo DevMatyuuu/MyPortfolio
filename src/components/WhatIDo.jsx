@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 function WhatIdo() {
 
   return (
-    <section id='services' className='font-poppins lg:mt-40 sm:mt-0 mt-28 xl:mt-40 mb-40 sm:mb-0 lg:mb-0'>
+    <section id='services' className='font-poppins lg:mt-40 sm:mt-96 mt-20 xl:mt-40 mb-40 sm:mb-0 lg:mb-0'>
         <div className=' lg:h-[77vh] h-100 bg-white'>
             <h1 className='text-center'>
                 <p className='text-slate-600 font-semibold lg:mb-2 lg:text-lg text-xs font-poppins'>My Offered</p>
@@ -19,7 +19,7 @@ function WhatIdo() {
                             <p className='text-slate-300 font-semibold xl:text-9xl lg:text-7xl text-5xl mb-4 lg:mb-0 font-Oswald'>{item.number}</p>
                             <div className='items-center'>
                                 <p className='lg:text-xl text-sm font-bold mb-1 lg:mb-2'>{item.title}</p>
-                                <p className='lg:w-60 w-48 lg:text-base text-sm'>{item.description}</p>
+                                <p className='xl:w-60 w-48  lg:text-base text-sm'>{item.description}</p>
                             </div>
                     </div>
                 </div>

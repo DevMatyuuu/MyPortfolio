@@ -9,13 +9,13 @@ function AboutMe() {
   const [hoveredId, setHoveredId] = useState(null);
 
   return (
-    <section className='lg:h-[160vh] lg:pt-72 -z-50' id='aboutme'>
+    <section className='xl:h-[160vh] lg:pt-72 -z-50' id='aboutme'>
       <h1 className='text-center'>
         <p className='text-slate-600 font-semibold lg:mb-2 lg:text-lg text-xs font-poppins'>Get to know more</p>
         <p className='font-bold lg:text-6xl text-4xl mb-8 lg:mb-0 font-poppins uppercase'>About Me</p>
       </h1>
-        <div className='lg:flex justify-center lg:gap-10 lg:pt-28'>
-          <div data-aos='flip-right' className='flex lg:justify-start justify-center'>
+        <div className='lg:flex-row xl:flex justify-center lg:justify-center xl:gap-16 lg:pt-28'>
+          <div data-aos='flip-right' className='flex xl:justify-start justify-center'>
             <img src={Mypic} className='lg:h-[60vh] h-[35vh] rounded-xl shadow-xl'/>
           </div>
           <div className='flex'>
