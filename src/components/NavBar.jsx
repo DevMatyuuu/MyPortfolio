@@ -39,7 +39,7 @@ function NavBar() {
   }, [prevScrollPos]);
     
   return (
-    <Navbar className={`${!isNavbarVisible ? 'bg-transparent' : 'bg-white'} flex sticky lg:inset-0 inset-0 z-50 lg:h-[14vh] h-max justify-center rounded-none backdrop-blur-0 cursor-pointer border-none shadow-none`}>
+    <Navbar className={`${!isNavbarVisible ? 'bg-transparent' : 'bg-white'} flex sticky lg:inset-0 inset-0 z-10 lg:h-[14vh] h-max justify-center rounded-none backdrop-blur-0 cursor-pointer border-none shadow-none`}>
         <motion.div 
         initial={{ opacity: 1 }}
         animate={{ opacity: isNavbarVisible ? 1 : 0 }}
@@ -73,10 +73,10 @@ function NavBar() {
               <Modal
                 isOpen={openModal}
                 contentLabel="Modal"
-                className='modal fixed mx-auto inset-0 flex items-center justify-center z-50'
-                overlayClassName="modal-overlay fixed inset-0 bg-black bg-opacity-25 flex items-center justify-center">
+                className='modal fixed mx-auto inset-0 flex items-center justify-center'
+                overlayClassName="modal-overlay fixed inset-0 bg-black bg-opacity-25 flex items-center justify-center z-50">
                   <Card className='h-[70vh] w-[80%] border-2 border-black z-50' data-aos='fade-in' data-duration='1000'>
-                    <CardBody className='z-50'>
+                    <CardBody className='z-50 relative'>
                         <div>
                           <IoClose onClick={modalClose} className='absolute right-5 mt-5 cursor-pointer' />
                         </div>

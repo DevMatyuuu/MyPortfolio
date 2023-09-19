@@ -15,7 +15,7 @@ function AboutMe() {
         <p className='font-bold lg:text-6xl text-4xl mb-8 lg:mb-0 font-poppins uppercase'>About Me</p>
       </h1>
         <div className='lg:flex-row xl:flex justify-center lg:justify-center xl:gap-16 lg:pt-28'>
-          <div data-aos='flip-right' className='flex xl:justify-start justify-center'>
+          <div data-aos='flip-right' className='flex xl:justify-start justify-center -z-0'>
             <img src={Mypic} className='lg:h-[60vh] h-[35vh] rounded-xl shadow-xl'/>
           </div>
           <div className='flex'>
