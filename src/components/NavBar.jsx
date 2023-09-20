@@ -81,10 +81,10 @@ function NavBar() {
                           <IoClose onClick={modalClose} className='absolute right-5 mt-5 cursor-pointer' />
                         </div>
                         <div className='flex flex-col text-center mt-24 gap-10 text-2xl uppercase'>
-                          <Link to='hero' spy={true} smooth={true} offset={-180} duration={500} className='cursor-pointer'>Home</Link>
-                          <Link to='Projects' spy={true} smooth={true} offset={-80} duration={500} className='cursor-pointer'>Project</Link>
-                          <Link to='aboutme' spy={true} smooth={true} offset={-20} duration={500} className='cursor-pointer'>About Me</Link>
-                          <Link to='contact' spy={true} smooth={true} offset={180} duration={500} className='cursor-pointer'>Contact Me</Link>
+                          <Link onClick={modalClose} to='hero' spy={true} smooth={true} offset={-180} duration={500} className='cursor-pointer'>Home</Link>
+                          <Link onClick={modalClose} to='Projects' spy={true} smooth={true} offset={-80} duration={500} className='cursor-pointer'>Project</Link>
+                          <Link onClick={modalClose} to='aboutme' spy={true} smooth={true} offset={-20} duration={500} className='cursor-pointer'>About Me</Link>
+                          <Link onClick={modalClose} to='contact' spy={true} smooth={true} offset={180} duration={500} className='cursor-pointer'>Contact Me</Link>
                         </div>
                     </CardBody>
                   </Card>

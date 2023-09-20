@@ -9,7 +9,7 @@ function AboutMe() {
   const [hoveredId, setHoveredId] = useState(null);
 
   return (
-    <section className='xl:h-[160vh] lg:pt-72 -z-50' id='aboutme'>
+    <section className='xl:h-[145vh] lg:mt-96 -z-50' id='aboutme'>
       <h1 className='text-center'>
         <p className='text-slate-600 font-semibold lg:mb-2 lg:text-lg text-xs font-poppins'>Get to know more</p>
         <p className='font-bold lg:text-6xl text-4xl mb-8 lg:mb-0 font-poppins uppercase'>About Me</p>
@@ -20,7 +20,7 @@ function AboutMe() {
           </div>
           <div className='flex'>
             <div className='mx-auto'>
-              <Card  className='lg:w-[890px] mx-auto lg:mx-o w-[80%] lg:h-[47%] lg:py-10 lg:px-10 py-4 px-4 lg:mb-10 mb-7 mt-8 lg:mt-0 shadow-xl border border-black border-r-8 border-b-4'>
+              <Card  className='lg:w-[890px] mx-auto lg:mx-o w-[80%] lg:h-[47%] lg:py-10 lg:px-10 py-4 px-4 lg:mb-10 mb-7 mt-8 lg:mt-10 xl:mt-0 shadow-xl border border-black border-r-8 border-b-4'>
                 <CardBody>
                   <p className='indent-7 lg:text-base text-xs text-justify'>HI! My name is Ross Matthew Santos.  A passionate front-end developer based in Metro Manila, Philippines. I'm a fresh gradudate and a degree holder in Bachelor of Science in Information Technology at Rizal Technological University-Boni Campus. I decided to pursue a career in Front-End Web developing because I want to showcase my skills and talent as well as to contribute in a company by designing quality web pages and making it clean, modern, responsive and detailed. I am always open for new learnings and opportunities to grow as a developer.</p>
                 </CardBody>
