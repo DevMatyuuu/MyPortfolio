@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typography } from "@material-tailwind/react";
-import CardEffect from './ProjSliders/cardEffect';
-import NormalSlider from './ProjSliders/normalSlider';
+import CardEffect from './ProjSliders/CardEffect';
+import NormalSlider from './ProjSliders/NormalSlider';
 
 
 function Projects() {
