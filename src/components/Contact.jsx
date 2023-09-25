@@ -3,8 +3,12 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Button} from '@material-tailwind/react'
 import emailjs from '@emailjs/browser'
+import Lottie from 'lottie-react';
+import Modal from 'react-modal'
+import Sent from '../assets/animated/sent.json'
 
 function Footer() {
+  const [modalOpen, setModalOpen] = useState(false);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -26,6 +30,7 @@ function Footer() {
     emailjs.send (serviceId, templateId, templateParams, publickKey)
     .then((res) => {
       console.log(res, 'Email sent successfully')
+      handleOpenModal();
       setName('');
       setEmail('');
       setMessage('');
@@ -33,6 +38,13 @@ function Footer() {
     .catch((error) => {
       console.error('error sending email', error)
     })
+  };
+
+  const handleOpenModal = () => {
+    setModalOpen(true);
+    setTimeout(() => {
+      setModalOpen(false);
+    }, 1500);
   };
 
   useEffect(() => {
@@ -63,6 +75,15 @@ function Footer() {
                 <Button type="submit" className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-black sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</Button>
             </form>
         </div>
+        <Modal
+        isOpen={modalOpen}
+        onRequestClose={() => setModalOpen(false)}
+        contentLabel="Modal"
+        className='modal z-50 fixed inset-0 flex items-center justify-center bg-transparent'
+        overlayClassName="modal-overlay fixed inset-0 bg-transparent bg-opacity-0 flex items-center justify-center" // Tailwind CSS classes for the modal overlay
+      >
+            <Lottie animationData={Sent} className='max-w-[400px] max-h-[400px]'/>
+        </Modal>
   </section>
   )
 }
